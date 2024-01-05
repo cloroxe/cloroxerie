@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloroxe YouTube Channel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background: linear-gradient(to bottom right, #8e44ad, #3498db); /* Dégradé de violet à bleu */
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+        }
+
+        #banner {
+            width: 80%;
+            height: auto;
+            margin: 0 auto; /* Centrer horizontalement */
+            display: block;
+            margin-left: -20px; /* Décalage de 20 pixels vers la gauche */
+        }
+
+        #profile-picture {
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            left: calc(50% - 50px); /* Ajustement pour aligner avec le centre de la bannière */
+        }
+
+        #visit-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px; /* Ajustement de la taille */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .video {
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="banner" src="Capture_d_écran_2024-01-04_175259-removebg-preview.png" alt="Bannière YouTube">
+        <img id="profile-picture" src="Capture_d_écran_2024-01-04_174908-removebg-preview.png" alt="Photo de profil">
+        <a id="visit-button" href="https://www.youtube.com/@cloroxe11" target="_blank">Visiter la chaîne YouTube</a>
+    </header>
+
+    <section>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+            <p>Titre de la vidéo 1</p>
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            <p>Titre de la vidéo 2</p>
+        </div>
+
+        <!-- Ajoutez plus de vidéos de la même manière -->
+    </section>
+
+</body>
+</html>
